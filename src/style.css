@@ -44,6 +44,7 @@ h1 {
 }
 .todo-app:hover {
   box-shadow: 5px 5px 19px #ccc;
+  transform: scale(1.1);
   cursor: all;
 }
 
