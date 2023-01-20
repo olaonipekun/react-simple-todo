@@ -18,6 +18,9 @@ h1 {
   text-shadow: 2px 2px #ccc;
   font-family: 'FancyFont', sans-serif;
 }
+.heading {
+  text-decoration: none;
+}
 
 .todo-app {
   width: 400px;
@@ -27,19 +30,28 @@ h1 {
   border-radius: 5px;
   background-color: white;
   box-shadow: 2px 2px 10px #ccc;
+  transition: all 0.2s ease-in-out;
+  animation: fadeIn 0.5s ease-in-out;
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.todo-app:hover {
+  box-shadow: 5px 5px 19px #ccc;
+  cursor: all;
+}
+
 form {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
   gap: 10px;
-  transition: all 0.2s ease-in-out;
-}
-
-form:hover {
-  background-color: #f5f5f5;
-  box-shadow: 2px 2px 10px #ccc;
-  cursor: pointer;
 }
 
 input {

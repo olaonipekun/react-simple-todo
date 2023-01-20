@@ -36,7 +36,9 @@ function TodoApp() {
 
   return (
     <>
-      <h1> Fancy Todos </h1>
+      <a href="/" className="heading">
+        <h1> Fancy Todos </h1>
+      </a>
       <div className="todo-app">
         <form onSubmit={addTodo}>
           <input
