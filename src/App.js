@@ -66,7 +66,11 @@ function TodoApp() {
               ) : (
                 <>
                   {todo}
-                  <input type="checkbox" onClick={() => completeTodo(index)} />
+                  <input
+                    type="checkbox"
+                    className="check"
+                    onClick={() => completeTodo(index)}
+                  />
                   <button onClick={() => editTodoItem(index)}>Edit</button>
                   <button onClick={() => deleteTodo(index)}>Delete</button>
                 </>
